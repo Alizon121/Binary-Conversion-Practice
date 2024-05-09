@@ -6,13 +6,26 @@ Consult documentation on how to utilize the following methods:
 */
 
 /* Base 10 to base 2 */
-function decimalToBinary(blob) {
-  // Your code here 
+function decimalToBinary(num) {
+// Convert a base 10 integer into a binary number (ase-2)
+// Formula: divide the integer by number base and keep track of the remainder.
+
+let base = '0b'
+
+// Need to iterate over the num by dividng by 2 and then see if there is aremainder -> add remainder to the string.
+// Or use the toString() method and specify the base:
+
+let newStr = num.toString(2)
+
+return base += newStr
 }
 
 /* Base 10 to base 16 */
 function decimalToHexadecimal(blob) {
-  // Your code here 
+
+
+
+  
 }
 
 /* Base 2 to base 10 */
@@ -26,7 +39,7 @@ function hexadecimalToDecimal(blob) {
 }
 
 // console.log('Decimal to binary:')
-// console.log(decimalToBinary(13))  // '0b1101'
+console.log(decimalToBinary(13))  // '0b1101'
 // console.log(decimalToBinary(72))  // '0b1001000'
 // console.log('')
 
