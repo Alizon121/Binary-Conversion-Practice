@@ -21,25 +21,37 @@ return base += newStr
 }
 
 /* Base 10 to base 16 */
-function decimalToHexadecimal(blob) {
+function decimalToHexadecimal(num) {
+
+let base = '0x'
+let newStr = num.toString(16)
+return base += newStr
 
 
-
-  
 }
 
 /* Base 2 to base 10 */
-function binaryToDecimal(blob) {
-  // Your code here 
+function binaryToDecimal(string) {
+  // parseInt() only for passing a string nd returning a base 10 
+  // Use parseInt() to convert a binary to a base-10, etc.
+
+let binary = string.slice(2)
+return parseInt(binary, 2)
 }
 
 /* Base 16 to base 10 */
-function hexadecimalToDecimal(blob) {
-  // Your code here 
+function hexadecimalToDecimal(string) {
+  // Pass in a base-16 code and we want to return base-10
+// Use the toString() method to convert a base-16 to a base-10
+
+// 'Convert 0x23 to 35'
+  let newStr = string.slice(2)
+  let base16 = parseInt(newStr, 16)
+  return base16
 }
 
 // console.log('Decimal to binary:')
-console.log(decimalToBinary(13))  // '0b1101'
+// console.log(decimalToBinary(13))  // '0b1101'
 // console.log(decimalToBinary(72))  // '0b1001000'
 // console.log('')
 
